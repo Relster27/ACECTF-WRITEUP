@@ -1,9 +1,9 @@
 # Token of Trust - CTF Challenge Writeup
 
 ## Challenge Information
-**Name:** Token of Trust  
-**Description:** At first, this web app seems straightforward, but there's something more lurking beneath the surface. It relies on a token for user authentication, but not everything is as secure as it seems. Look closely, and you might discover that the system's trust can be manipulated. The secret is hidden within the way this token is used. Can you find the key to unlock what's been concealed?  
-**Target:** http://34.131.133.224:9999/
+> Name: Token of Trust  
+Description: At first, this web app seems straightforward, but there's something more lurking beneath the surface. It relies on a token for user authentication, but not everything is as secure as it seems. Look closely, and you might discover that the system's trust can be manipulated. The secret is hidden within the way this token is used. Can you find the key to unlock what's been concealed?  
+Target: http://34.131.133.224:9999/
 
 ## Challenge Overview
 This challenge presents a web application that uses token-based authentication for controlling access. At first glance, the application appears to be a standard login system, but there's a security flaw in how it handles and validates authentication tokens.
