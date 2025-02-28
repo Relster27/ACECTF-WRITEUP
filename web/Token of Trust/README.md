@@ -88,10 +88,12 @@ Modified header:
 }
 ```
 
-Our tampered token now looks like:
-```
-eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJ1c2VyIjoiZ3Vlc3QifQ.
-```
+**Payload**: Contains the claims
+   ```json
+   {
+     "user": "admin"
+   }
+   ```
 
 ### Step 5: Discovering Hidden Endpoints
 Now we need to find where to use our manipulated token. A common technique in web application reconnaissance is checking the robots.txt file, which often contains information about restricted areas of a website.
