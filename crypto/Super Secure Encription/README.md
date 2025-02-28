@@ -162,6 +162,7 @@ Recovered flag: ACECTF{n07h1n6_15_53cur3_1n_7h15_w0rld}
 
 
 ### Image Explain 
+```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
   <!-- Background -->
   <rect width="800" height="600" fill="#f8f9fa"/>
@@ -240,3 +241,4 @@ Recovered flag: ACECTF{n07h1n6_15_53cur3_1n_7h15_w0rld}
     </marker>
   </defs>
 </svg>
+```
