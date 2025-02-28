@@ -1,6 +1,6 @@
-# Ret2win
-
 # This is the intended way to solve a Ret2win challenge
+
+## Technique : Ret2win
 
 Checking binary protection.
 ```bash
