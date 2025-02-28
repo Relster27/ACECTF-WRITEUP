@@ -1,5 +1,7 @@
 # Ret2win
 
+# This is the intended way to solve a Ret2win challenge
+
 Checking binary protection.
 ```bash
 [*] '/home/relster/Desktop/ctf/acectf/pwn/underflow/exploit-me'
@@ -17,6 +19,9 @@ Disassembled code in ghdira. \
 ![image](https://github.com/user-attachments/assets/36abedb6-6e18-420f-9c53-5da615c38c3a)
 
 ![image](https://github.com/user-attachments/assets/0a01f11d-d6bf-4cb3-93aa-2c89da866c41)
+
+![image](https://github.com/user-attachments/assets/8b459c9e-032d-420f-80ef-e2887b4a184e)
+
 
 This is a basic buffer overflow and return to _**win**_ function. Let's overflow the stack which holds 64 **bytes** and add extra 8 **bytes** for RBP and the 73rd byte is where RIP (instruction pointer) starts.
 We could grab the address of _**win**_ function from gdb or use _**pwntools**_, here i'll just grab manually from gdb. \
