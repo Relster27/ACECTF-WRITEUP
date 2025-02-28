@@ -31,7 +31,6 @@ https://whatsmyname.app/
 
 Entering "modernlouis" into this tool reveals several accounts, including a YouTube account with the username @modernlouis.
 
-![WhatsMy.Name search example](https://i.imgur.com/example1.png) <!-- Note: This is a placeholder, not an actual image -->
 
 ### 3. YouTube Account Investigation
 
