@@ -1,8 +1,5 @@
 # CTF Writeup: Buried Deep
 
-## Introduction
-"Buried Deep" is a web-based CTF challenge that tests your reconnaissance skills and ability to decode hidden information spread across multiple locations on a website. The challenge involves discovering hidden directories, decoding various encoded messages, and piecing together fragments to form the complete flag.
-
 ## Challenge Description
 The challenge presents itself with a cryptic message:
 
