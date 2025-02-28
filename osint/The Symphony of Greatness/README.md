@@ -41,9 +41,9 @@ When accessing the YouTube account, we discover a link to another platform in th
 makromusic.com/u/modernlouis
 ```
 
-This link points to a profile on a music platform called Ma Music, giving us another avenue to explore.
+This link points to a profile on a music platform called MakroMusic, giving us another avenue to explore.
 
-### 4. Ma Music Profile Analysis
+### 4. MakroMusic Profile Analysis
 
 Visiting the linked profile on makromusic.com reveals a crucial additional clue in the account description:
 
