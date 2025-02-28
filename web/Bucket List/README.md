@@ -1,8 +1,5 @@
 # Bucket List - CTF Challenge Writeup
 
-## Introduction
-"Bucket List" is a web security challenge that tests participants' ability to discover and exploit a misconfigured Amazon S3 storage bucket to find a hidden flag.
-
 ## Challenge Description
 The challenge presents us with the following text:
 
