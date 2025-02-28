@@ -159,3 +159,84 @@ When we run the script with the provided `msg.txt`, it should successfully recov
 $ python3 script.py
 Recovered flag: ACECTF{n07h1n6_15_53cur3_1n_7h15_w0rld}
 ```
+
+
+### Image Explain 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">CTR Mode Keystream Reuse Attack</text>
+  
+  <!-- First encryption (Known message) -->
+  <rect x="100" y="80" width="200" height="50" fill="#aed6f1" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="200" y="110" font-family="Arial" font-size="16" text-anchor="middle">Known Plaintext (P₁)</text>
+  
+  <rect x="400" y="80" width="200" height="50" fill="#f5b7b1" stroke="#e74c3c" stroke-width="2" rx="5"/>
+  <text x="500" y="110" font-family="Arial" font-size="16" text-anchor="middle">Ciphertext 1 (C₁)</text>
+  
+  <!-- First encryption arrow and operation -->
+  <line x1="300" y1="105" x2="400" y2="105" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <circle cx="350" cy="105" r="20" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+  <text x="350" y="110" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">⊕</text>
+  
+  <!-- Keystream for first encryption -->
+  <rect x="250" y="170" width="200" height="50" fill="#a9dfbf" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="350" y="200" font-family="Arial" font-size="16" text-anchor="middle">Keystream (K)</text>
+  
+  <!-- Keystream arrow to first XOR -->
+  <line x1="350" y1="170" x2="350" y2="125" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Second encryption (Flag) -->
+  <rect x="100" y="280" width="200" height="50" fill="#d2b4de" stroke="#8e44ad" stroke-width="2" rx="5"/>
+  <text x="200" y="310" font-family="Arial" font-size="16" text-anchor="middle">Unknown Flag (P₂)</text>
+  
+  <rect x="400" y="280" width="200" height="50" fill="#f5b7b1" stroke="#e74c3c" stroke-width="2" rx="5"/>
+  <text x="500" y="310" font-family="Arial" font-size="16" text-anchor="middle">Ciphertext 2 (C₂)</text>
+  
+  <!-- Second encryption arrow and operation -->
+  <line x1="300" y1="305" x2="400" y2="305" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <circle cx="350" cy="305" r="20" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+  <text x="350" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">⊕</text>
+  
+  <!-- Keystream reuse annotation -->
+  <line x1="350" y1="220" x2="350" y2="285" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="430" y="250" font-family="Arial" font-size="14" fill="#c0392b" font-weight="bold">SAME KEYSTREAM REUSED!</text>
+  <path d="M 430,253 C 420,240 410,235 380,260" stroke="#c0392b" stroke-width="2" fill="none"/>
+  
+  <!-- Attack section title -->
+  <text x="400" y="370" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Attack Process</text>
+  
+  <!-- Getting keystream section -->
+  <rect x="50" y="400" width="300" height="140" fill="#ebf5fb" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="200" y="425" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Step 1: Derive Keystream</text>
+  
+  <!-- Formula for deriving keystream -->
+  <text x="200" y="455" font-family="Arial" font-size="16" text-anchor="middle">K = P₁ ⊕ C₁</text>
+  <text x="200" y="485" font-family="Arial" font-size="14" text-anchor="middle">Since: C₁ = P₁ ⊕ K</text>
+  <text x="200" y="515" font-family="Arial" font-size="14" text-anchor="middle">Therefore: P₁ ⊕ C₁ = P₁ ⊕ (P₁ ⊕ K) = K</text>
+  
+  <!-- Recovering flag section -->
+  <rect x="450" y="400" width="300" height="140" fill="#ebf5fb" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="600" y="425" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Step 2: Recover Flag</text>
+  
+  <!-- Formula for recovering flag -->
+  <text x="600" y="455" font-family="Arial" font-size="16" text-anchor="middle">P₂ = C₂ ⊕ K</text>
+  <text x="600" y="485" font-family="Arial" font-size="14" text-anchor="middle">Since: C₂ = P₂ ⊕ K</text>
+  <text x="600" y="515" font-family="Arial" font-size="14" text-anchor="middle">Therefore: C₂ ⊕ K = (P₂ ⊕ K) ⊕ K = P₂</text>
+  
+  <!-- Arrow connecting the steps -->
+  <line x1="350" y1="470" x2="450" y2="470" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Vulnerability explanation -->
+  <rect x="200" y="560" width="400" height="30" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" rx="5"/>
+  <text x="400" y="578" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Vulnerability: Same key + Same counter = Same keystream</text>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>
