@@ -1,13 +1,13 @@
 # Fall of 2022 - CTF Challenge Writeup
 
 ## Challenge Description
-```
-It was a peaceful time — schools were over, college admissions were delayed, and COVID was slowly on the decline. It seemed like the perfect time to relax and check my phone for her txts.
+
+> It was a peaceful time — schools were over, college admissions were delayed, and COVID was slowly on the decline. It seemed like the perfect time to relax and check my phone for her txts.
 The funny thing is, I never got any. So I considered it just another gloomy year.
 Anyways, here's the domain for this CTF: acectf.tech
 What? You already knew this domain? Oh, I guess you'll have no trouble finding the flag then.
 Good Luck!
-```
+
 
 The challenge presents a scenario referencing the Fall of 2022 as a time period of interest, with subtle wordplay around "txts" (text messages). Participants are given the domain `acectf.tech` and are told that if they already know the domain, they should have no trouble finding the flag.
 
