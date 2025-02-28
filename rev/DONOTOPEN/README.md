@@ -7,7 +7,7 @@ The Python script itself contains several flag variables and a PIN check that ha
 The goal is to extract the Python script, analyze its logic, and figure out the correct PIN to unlock the final flag.
 
 
-# NOTE
+## NOTE
 We don't have to patch the script, just straight up run this command below:
 ```bash
 tail -n +$(awk '/^__ARCHIVE_BELOW__/ {print NR+1; exit}' script.sh) script.sh | gzip -d > extract.py
