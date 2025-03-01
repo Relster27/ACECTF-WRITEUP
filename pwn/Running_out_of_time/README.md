@@ -3,7 +3,7 @@
 >Note : Unintended way to solve this? (IDK)
 
 # POC
-I don't know if this challenge supposed has its own encryption algorithm embedded in the binary. But this challenge becomes a **reverse** challenge rather than **pwn**. But anyway.
+I don't know if this challenge supposed to have its own encryption algorithm embedded in the binary. But this challenge becomes a **reverse** challenge rather than **pwn**. But anyway.
 
 ## Analyze the binary
 Decompiled binary in **Ghidra**. \
