@@ -38,19 +38,19 @@ Running this command will give us a file named _**message.txt**_, below is the c
 Jvunyhabshapvuz fvb bujvclylk aol alea, uvd mvssvd aopz spur mvy fvby ulea zalw vm aol wbggsl.
 oaawz://kypcl.nvvnsl.jvt/mpsl/k/1HMWOhQ0dGTGDFKrB-RepDb9g5hATz6LV/cpld?bzw=zohypun
 ```
-A simple ROT-7 needed here to decode it's original value, below is the original content:\
+A simple ROT-7 needed here to decode its original value, below is the original content:\
 ```text
 Congratulations you uncovered the text, now follow this link for your next step of the puzzle.
 https://drive.google.com/file/d/1AFPHaJ0wZMZWYDkU-KxiWu9z5aTMs6EO/view?usp=sharing
 ```
 >Note : That google drive link is actually not working now, but it gave us an image file named **_RickRoll.jpg_**
 
+As ususal let's run _**exiftool**_ to check its metadata: \
+![Screenshot 2025-03-01 111118](https://github.com/user-attachments/assets/2f55facb-ff73-400f-b8b4-e6e58c5f6b11)
+Just a simple binary encoding which translates to:
+```text
 
-
-
-
-
-
+...
 
 
 
