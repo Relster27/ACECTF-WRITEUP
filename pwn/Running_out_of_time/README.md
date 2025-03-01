@@ -6,7 +6,7 @@
 I don't know if this challenge supposed has its own encryption algorithm embedded in the binary. But this challenge becomes a **reverse** challenge rather than **pwn**. But anyway.
 
 ## Analyze the binary
-Decompiled binary in **Ghidra**.
+Decompiled binary in **Ghidra**. \
 ![image](https://github.com/user-attachments/assets/9201ff4d-6d3d-4c3a-9cb3-b62842f8a4ea) \
 This program accepts user input and store it into **_input_buf_** variable. The intended way to solve is, to guess the correct value and let the binary prints the flag itself. But rather than doing that, i reversed the encryption algorithm which is just a basic XOR encryption with a key.
 
