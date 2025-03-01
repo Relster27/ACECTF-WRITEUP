@@ -1,5 +1,7 @@
 # Bucket List - CTF Challenge Writeup
 
+![image](https://github.com/user-attachments/assets/571f865d-861c-4273-a275-a567e6957022)
+
 ## Challenge Description
 The challenge presents us with the following text:
 
@@ -47,7 +49,8 @@ When examining the contents of the bucket listing (you can use View Source or Ct
 This XML snippet reveals a text file named "secret.txt" located in the "cry-for-me/acectf/" directory within the bucket, with a size of 44 bytes.
 
 ### Step 4: Accessing the Secret File
-Now that we've discovered this hidden file, we can construct a URL to access it directly:
+Now that we've discovered this hidden file, we can construct a URL to access it directly
+
 ```
 https://opening-account-acectf.s3.ap-south-1.amazonaws.com/cry-for-me/acectf/secret.txt
 ```
@@ -55,6 +58,9 @@ https://opening-account-acectf.s3.ap-south-1.amazonaws.com/cry-for-me/acectf/sec
 Navigating to this URL gives us access to the content of the secret.txt file.
 
 ### Step 5: Decoding the Flag
+
+![image](https://github.com/user-attachments/assets/cb459b39-43aa-4f3d-9926-4d45ae5215ab)
+
 Accessing the secret.txt file reveals a Base64 encoded string:
 ```
 QUNFQ1RGezdoM180dzVfMTVfbTE1YzBuZjE2dXIzZH0=
