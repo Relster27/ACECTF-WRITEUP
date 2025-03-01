@@ -27,6 +27,10 @@ This is a basic buffer overflow and return to _**win**_ function. Let's overflow
 We could grab the address of _**win**_ function from gdb or use _**pwntools**_, here i'll just grab manually from gdb. \
 ![image](https://github.com/user-attachments/assets/52e5e395-0959-42fd-8664-ab6ef3663f6d)
 
+## Result
+![image](https://github.com/user-attachments/assets/220e184e-631a-4ddd-bb60-d285963ad31e)
+
+
 ## Keyword
 ret2win \
 Buffer overflow 
