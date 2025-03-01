@@ -5,8 +5,8 @@
 
 # POC
 This challenge needs a good intuition (well not really, hehe), i mean like the clues are scattered accross files and we were forced to be a detective and remember all small clues in order to solve this challenge.
-‎\
-\
+
+
 Initially we're given with 2 files, they are _**Readme.txt**_ and _**Start.jpg**_.
 
 _**Readme.txt**_:
@@ -25,9 +25,10 @@ _**Start.jpg**_'s metadata: \
 > Two hints were released a couple hours before the event ended, and it does mentioned about the '**?**' sign. Which is used for the password later on.
 
 \
+But you might wonder what **password** has to do here? Well if we run [**_steghide_**](https://steghide.sourceforge.net/) with correct password on **_Start.jpg_** we'd get another file. More information below. \
 ‎Looking at the hint we could assume that if we multiply the **height** and **width** of the image and then add with some value will give us the password of the image. \
-But you might wonder what **password** has to do here? Well if we run [**_steghide_**](https://steghide.sourceforge.net/) on **_Start.jpg_** we'd get another file. More information below. \
-\
+
+
 Now what's the value of '?' ? It's actually the value **6467** which is on the challenge title itself or in the file _**Start.jpg**_. So now we got our final password which is 1587 * 1590 + 6467. \
 Password for _**Start.jpg**_ = 2529797 \
 \
