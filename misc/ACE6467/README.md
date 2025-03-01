@@ -64,12 +64,12 @@ Turn out the password is not a number of some mathematical operation but it's li
 This is actually just the **width** and **height** value with 'x' sign added in the middle of it. (Who would've thought).
 
 
-Now we got new file let's check its content:\
+Now we got new file let's check its content:
 ```text
 Fob hkzi hntamfymusli yrrhmczrj ahps wiwhtxc. Kbtnrhtepeibfla, oaa im yyy xwbei buga whs dli tgu rprt fob mskli uv tmee drvnq. 
 lxiij://eqgnbb.jow/srtlyfp/ouvk
 ```
-(Gosh!! another encrypted file)\
+(Gosh!! another encrypted file)
 
 But let's recall what information we've had previously. Yup, there's this string (**HahaKeepTrying**) that we haven't used. This file's content is actually encrypted by a **Vigenère Cipher** (was a blind guess from me). And yesss **Vigenère** was the cipher used to encode the content. Let's use **HahaKeepTrying** as the key. Here's the original content of **password.txt**:
 ```text
