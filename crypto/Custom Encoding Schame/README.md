@@ -1,6 +1,6 @@
 # Custom Encoding Scheme
 
-![image](https://github.com/user-attachments/assets/c127fd1e-b8af-4dbe-8453-6ad70e60cfd7)
+![image](https://github.com/user-attachments/assets/4e09bb99-1ad9-43b9-839b-f98f96dd18db)
 
 ## Challenge Description
 
