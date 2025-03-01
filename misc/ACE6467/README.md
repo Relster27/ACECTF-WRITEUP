@@ -21,9 +21,40 @@ There's indeed a clue in the metadata.
 _**Start.jpg**_'s metadata: \
 (I used _**exiftool**_) \
 ![image](https://github.com/user-attachments/assets/02cb3f3b-2d35-4e7c-be23-bd1c882c7b19)
-
+> Note:
 > Two hints were released a couple hours before the event ended, and it does mentioned about the '**?**' sign. Which is used for the password later on.
 
 \
-‎ 
-But you might wonder what **password** has to do here? Well if we run [**_stegseek_**](https://github.com/RickdeJager/stegseek) on **_Start.jpg_** we'd get another file. More information below.
+‎Looking at the hint we could assume that if we multiply the **height** and **width** of the image and then add with some value will give us the password of the image. \
+But you might wonder what **password** has to do here? Well if we run [**_steghide_**](https://steghide.sourceforge.net/) on **_Start.jpg_** we'd get another file. More information below. \
+\
+Now what's the value of '?' ? It's actually the value **6467** which is on the challenge title itself or in the file _**Start.jpg**_. So now we got our final password which is 1587 * 1590 + 6467. \
+Password for _**Start.jpg**_ = 2529797 \
+\
+Now let's run _**steghide**_ on it:
+```bash
+steghide extract -sf Start.jpg -p 2529797
+```
+Running this command will give us a file named _**message.txt**_, below is the content of it:
+```text
+Jvunyhabshapvuz fvb bujvclylk aol alea, uvd mvssvd aopz spur mvy fvby ulea zalw vm aol wbggsl.
+oaawz://kypcl.nvvnsl.jvt/mpsl/k/1HMWOhQ0dGTGDFKrB-RepDb9g5hATz6LV/cpld?bzw=zohypun
+```
+A simple ROT-7 needed here to decode it's original value, below is the original content:\
+```text
+Congratulations you uncovered the text, now follow this link for your next step of the puzzle.
+https://drive.google.com/file/d/1AFPHaJ0wZMZWYDkU-KxiWu9z5aTMs6EO/view?usp=sharing
+```
+>That google drive link is actually not working now, but it gave us an image file named **_RickRoll.jpg_**
+
+
+
+
+
+
+
+
+
+
+
+
