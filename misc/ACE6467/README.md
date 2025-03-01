@@ -4,7 +4,7 @@
 
 
 # POC
-This challenge needs a good intuition (well not really, hehe), i mean like the clues are scattered accross files and we were forced to be a detective and remember all small clues in order to solve this challenge.
+This challenge needs a good intuition and some stego skills (well not really, hehe), i mean like the clues are scattered accross files and we were forced to be a detective and remember all small clues in order to solve this challenge.
 
 
 Initially we're given with 2 files, they are _**Readme.txt**_ and _**Start.jpg**_.
@@ -43,7 +43,7 @@ A simple ROT-7 needed here to decode its original value, below is the original c
 Congratulations you uncovered the text, now follow this link for your next step of the puzzle.
 https://drive.google.com/file/d/1AFPHaJ0wZMZWYDkU-KxiWu9z5aTMs6EO/view?usp=sharing
 ```
->Note : That google drive link is actually not working now, but it gave us an image file named **_RickRoll.jpg_**
+>Note : That google drive link is actually not working now, but it did gave us an image file named **_RickRoll.jpg_**
 
 As ususal let's run _**exiftool**_ to check its metadata: \
 ![Screenshot 2025-03-01 111118](https://github.com/user-attachments/assets/2f55facb-ff73-400f-b8b4-e6e58c5f6b11)
@@ -51,6 +51,17 @@ Just a simple binary encoding which translates to:
 ```text
 HahaKeepTrying
 ```
+
+Same stuff as before we run _**steghide**_ to extract hidden file embedded within that _**image**_. And we got a file named _**password.txt**_. Here's the content of _**password.txt**_:
+```text
+Fob hkzi hntamfymusli yrrhmczrj ahps wiwhtxc. Kbtnrhtepeibfla, oaa im yyy xwbei buga whs dli tgu rprt fob mskli uv tmee drvnq. 
+lxiij://eqgnbb.jow/srtlyfp/ouvk
+```
+>Note : We were pulling out our hair when looking for the password for this image since there is no clue for the password of this image.
+> My friend was bruteforcing the password for this file for us. (Some manual bruteforce actually :v)
+Turn out the password is not a number of some mathematical operation but it's literally just **259x194**.\
+This is actually just the **width** and **height**_ value with 'x' sign added in the middle of it. (Who would've thought).
+
 
 
 
