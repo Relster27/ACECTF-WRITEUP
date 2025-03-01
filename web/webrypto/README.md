@@ -1,5 +1,7 @@
 # Webrypto CTF Challenge Writeup
 
+![image](https://github.com/user-attachments/assets/75d0c177-260e-4f95-ad56-72ad4178365b)
+
 ## Challenge Description
 
 > You know what's a bucketlist? In simple terms, it's just a list of wishes people want to achieve before the leavee this world. I found it to be very limiting & ironic because how can you know when you'll leave the world behind? It's better to enjoy every moment and take on every opportunity you can. One of my whishes though is to pet a cat, do you mind checking this one out. So cute.
@@ -9,6 +11,8 @@ What a cutie patootie!
 The challenge presents us with a nostalgic reference to the classic cartoon Tom & Jerry, questioning whether their famous chases were genuine or if they were secretly friends all along. To settle this debate, the creator developed a web application containing the hidden truth.
 
 Our task is to uncover this secret by exploiting vulnerabilities in the web application's parameter validation system. After examining the application, we discover it's built with PHP and implements specific validation checks on two URL parameters: 'tom' and 'jerry'.
+
+![image](https://github.com/user-attachments/assets/a627780c-ccfc-44cd-877c-bd4ebcd0311e)
 
 The underlying PHP code reveals two critical conditions we need to satisfy simultaneously:
 ```php
@@ -92,6 +96,8 @@ When we send this request to the server, here's what happens behind the scenes:
    - The second condition is satisfied
 
 4. With both conditions satisfied, the server reveals the flag
+
+![image](https://github.com/user-attachments/assets/66550e54-e54d-4aff-9607-2b71f095e260)
 
 When we submit our crafted URL:
 ```
