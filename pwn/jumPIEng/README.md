@@ -27,8 +27,15 @@ gdb -q ./redirection
 ![image](https://github.com/user-attachments/assets/95fbe310-9f76-4afe-9142-30af6ed8276a)
 The offset is **_0x1262_** from the base address of the binary.
 
-From here we just need to add that offset (**__**)
+Since the program already leaking the base address of the binary, then we just need to add the offset of **_redirected_to_success()_** (**__0x1262__**) to the leaked address, and that's it, we've redirected execution to the _**win function**_ and get the flag.
 
+## Result
+![Screenshot 2025-03-01 123637](https://github.com/user-attachments/assets/ad377e79-1b73-42d8-9ce8-a98549075b70)
+
+## Keyword
+Ret2win \
+Function offsets \
+Extracting strings with pwntools
 
 
 
