@@ -24,7 +24,7 @@ Checking **_win_** function offset in **_GDB_**.
 ```bash
 gdb -q ./redirection
 ```
-![image](https://github.com/user-attachments/assets/95fbe310-9f76-4afe-9142-30af6ed8276a)
+![image](https://github.com/user-attachments/assets/95fbe310-9f76-4afe-9142-30af6ed8276a) \
 The offset is **_0x1262_** from the base address of the binary.
 
 Since the program already leaking the base address of the binary, then we just need to add the offset of **_redirected_to_success()_** (**__0x1262__**) to the leaked address, and that's it, we've redirected execution to the _**win function**_ and get the flag.
