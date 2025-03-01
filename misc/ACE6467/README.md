@@ -26,8 +26,8 @@ _**Start.jpg**_'s metadata: \
 
 But you might wonder what **password** has to do here? Well if we run [**_steghide_**](https://steghide.sourceforge.net/) with correct password on **_Start.jpg_** we'd get another file. More information below.
 
-‎Looking at the hint we could assume that if we multiply the **height** and **width** of the image and then add with some value will give us the password of the image. Now what's the value of '?' ? It's actually the value **6467** which is on the challenge title itself or in the file _**Start.jpg**_. So now we got our final password which is 1587 * 1590 + 6467. \
-Password for _**Start.jpg**_ = 2529797 \
+‎Looking at the hint we could assume that if we multiply the **height** and **width** of the image and then add with some value will gives us the password of the image. Now what's the value of '?' ? It's actually the value **6467** which is on the challenge title itself or in the file _**Start.jpg**_. So now we got our final password which is 1587 * 1590 + 6467. \
+Password for _**Start.jpg**_ = 2529797 
 
 Now let's run _**steghide**_ on it:
 ```bash
