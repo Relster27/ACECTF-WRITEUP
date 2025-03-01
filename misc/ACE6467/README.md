@@ -49,8 +49,8 @@ As ususal let's run _**exiftool**_ to check its metadata: \
 ![Screenshot 2025-03-01 111118](https://github.com/user-attachments/assets/2f55facb-ff73-400f-b8b4-e6e58c5f6b11)
 Just a simple binary encoding which translates to:
 ```text
-
-...
+HahaKeepTrying
+```
 
 
 
