@@ -1,5 +1,7 @@
 # The Symphony of Greatness - CTF Challenge Writeup
 
+![image](https://github.com/user-attachments/assets/35a483d4-ad98-48dc-8348-c550ea9a0f9b)
+
 
 ## Challenge Description
 
@@ -30,10 +32,14 @@ To find where this username exists online, we can use whatsmyname.app, which sea
 https://whatsmyname.app/
 ```
 
+![image](https://github.com/user-attachments/assets/c4e67020-e977-4c9e-ad7b-3f92b03523b3)
+
 Entering "modernlouis" into this tool reveals several accounts, including a YouTube account with the username @modernlouis.
 
-
 ### 3. YouTube Account Investigation
+
+![image](https://github.com/user-attachments/assets/cf648a9e-dc4c-4f1a-9951-4ef2810c807c)
+
 
 When accessing the YouTube account, we discover a link to another platform in the profile:
 
@@ -44,6 +50,8 @@ makromusic.com/u/modernlouis
 This link points to a profile on a music platform called MakroMusic, giving us another avenue to explore.
 
 ### 4. MakroMusic Profile Analysis
+
+![image](https://github.com/user-attachments/assets/e6f7c62e-c32a-4502-8779-65e3cfd3ed28)
 
 Visiting the linked profile on makromusic.com reveals a crucial additional clue in the account description:
 
@@ -68,6 +76,8 @@ The connection between "modernlouis" and "Modern Talking" becomes even more appa
 - "louis" could be a play on words related to "talking" (as in speaking/talking)
 
 ### 6. Verifying the Most Streamed Song
+
+![image](https://github.com/user-attachments/assets/e7b475d4-3ee7-4fcb-812f-f9989d711c8f)
 
 Once we've identified Modern Talking as the likely answer, we need to find their most streamed song on Spotify. A search reveals that "Cheri Cheri Lady" is their most popular track with the highest stream count.
 
