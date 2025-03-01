@@ -1,5 +1,7 @@
 # Super Secure Encryption
 
+![image](https://github.com/user-attachments/assets/e068a91c-a2c1-493b-b0e2-c14bd598736c)
+
 A cryptographic challenge that demonstrates the dangers of keystream reuse in stream ciphers, specifically exploiting a vulnerability in AES-CTR mode implementation.
 
 ## Challenge Description
