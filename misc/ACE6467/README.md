@@ -59,6 +59,7 @@ lxiij://eqgnbb.jow/srtlyfp/ouvk
 ```
 >Note : We were pulling out our hair when looking for the password for this image since there is no clue for the password of this image.
 > My friend was bruteforcing the password for this file for us. (Some manual bruteforce actually :v)
+
 Turn out the password is not a number of some mathematical operation but it's literally just **259x194**.\
 This is actually just the **width** and **height**_ value with 'x' sign added in the middle of it. (Who would've thought).
 
