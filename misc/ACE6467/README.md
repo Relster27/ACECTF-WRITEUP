@@ -82,4 +82,4 @@ https://github.com/oneshhh/book
 
 
 Yup that's it, that's the flag. Just need a little bit formatting and we end this suffering.\
-FLAG = ACECTF{The_B00k_Of_S3crets}
+FLAG = ACECTF{7h3_b00k_0f_53cr375}
