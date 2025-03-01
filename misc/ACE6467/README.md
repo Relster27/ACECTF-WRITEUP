@@ -81,5 +81,5 @@ https://github.com/oneshhh/book
 ![Screenshot 2025-03-01 114219](https://github.com/user-attachments/assets/d9119f14-02fe-4f45-b408-bd667a7df7cd)
 
 
-Yup that's it, that's the flag. Just need a little bit formatting and we end this suffering.
+Yup that's it, that's the flag. Just need a little bit formatting and we end this suffering.\
 FLAG = ACECTF{The_B00k_Of_S3crets}
