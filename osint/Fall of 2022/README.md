@@ -1,5 +1,8 @@
 # Fall of 2022 - CTF Challenge Writeup
 
+![image](https://github.com/user-attachments/assets/ef048d4d-2556-4553-8270-02dafaf78a17)
+
+
 ## Challenge Description
 
 > It was a peaceful time — schools were over, college admissions were delayed, and COVID was slowly on the decline. It seemed like the perfect time to relax and check my phone for her txts.
