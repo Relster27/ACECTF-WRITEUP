@@ -1,5 +1,7 @@
 # Custom Encoding Scheme
 
+![image](https://github.com/user-attachments/assets/c127fd1e-b8af-4dbe-8453-6ad70e60cfd7)
+
 ## Challenge Description
 
 > I wanted to create a custom encoding for a crypto challenge but turns out, I didn't have anough time on my hands. So, what I did here is - Well instead of explaining it to you why don't I give you the script?
