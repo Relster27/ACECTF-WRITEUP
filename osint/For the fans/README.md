@@ -17,16 +17,24 @@ Tool used: https://whatsmyname.app/
 Search term: DrakeSaltyOVO
 ```
 
+![image](https://github.com/user-attachments/assets/06a1f3f9-42b9-4201-bfc3-42f37d13a802)
+
+
 This search reveals a Twitter (now X) account. Let's navigate to it:
 
 ```
 https://x.com/DrakeSaltyOVO
 ```
 
+![image](https://github.com/user-attachments/assets/17a62834-a959-4f13-bdd4-f83cd0853077)
+
 ### Step 2: Analyzing Twitter Content
 On examining the Twitter profile, we find a critical tweet where the user mentions creating a blog:
 
 > I really wanna put in a post about drake ngl, but this platform ain't cool yk, "so Imma blog somewhere, also twitter has a limit of 15 chars for username, who even does that. I don't like my username, finda new one ig. See ya at my "blog" babe, hope you drop in a note there!!! OVO"
+
+![image](https://github.com/user-attachments/assets/a35a409c-3e43-4bd4-9033-92f994a81d55)
+
 
 This tweet contains several important clues:
 1. The user plans to create a blog on another platform
@@ -45,6 +53,9 @@ This search leads us to a Tumbig blog by a user named "salty-senpai-drake1":
 ```
 https://www.tumbig.com/blog/salty-senpai-drake1
 ```
+
+![image](https://github.com/user-attachments/assets/4ea2db35-dfbe-4d45-a3fa-c88026c3aee5)
+
 
 ### Step 4: Examining Blog Content
 The blog contains a post titled "Drake GOAT" with several paragraphs praising Drake. At the end of the post, we find:
@@ -77,6 +88,9 @@ Running this script converts the Base64 string to binary data and saves it as a 
 
 ### Step 6: Finding the Archive Password
 Now we have a 7z archive file, but it's password-protected. Looking back at the Twitter profile for potential password clues, we notice a number: 2000914. This could be the password for the archive.
+
+![image](https://github.com/user-attachments/assets/9ba963f3-cda3-460b-b832-f7a3d5719fa3)
+
 
 ### Step 7: Extracting the Archive
 We can use 7-Zip or a similar archive utility to extract the contents using the discovered password:
