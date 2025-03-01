@@ -61,10 +61,25 @@ lxiij://eqgnbb.jow/srtlyfp/ouvk
 > My friend was bruteforcing the password for this file for us. (Some manual bruteforce actually :v)
 
 Turn out the password is not a number of some mathematical operation but it's literally just **259x194**.\
-This is actually just the **width** and **height**_ value with 'x' sign added in the middle of it. (Who would've thought).
+This is actually just the **width** and **height** value with 'x' sign added in the middle of it. (Who would've thought).
 
 
+Now we got new file let's check its content:\
+```text
+Fob hkzi hntamfymusli yrrhmczrj ahps wiwhtxc. Kbtnrhtepeibfla, oaa im yyy xwbei buga whs dli tgu rprt fob mskli uv tmee drvnq. 
+lxiij://eqgnbb.jow/srtlyfp/ouvk
+```
+(Gosh!! another encrypted file)\
+
+But let's recall what information we've had previously. Yup, there's this string (**HahaKeepTrying**) that we haven't used. This file's content is actually encrypted by a **Vigenère Cipher** (was a blind guess from me). And yesss **Vigenère** was the cipher used to encode the content. Let's use **HahaKeepTrying** as the key. Here's the original content of **password.txt**:
+```text
+You have successfully uncovered this message. Congratulations, but if you think that was the end then you might be very wrong. 
+https://github.com/oneshhh/book
+```
+
+[https://github.com/oneshhh/book](https://github.com/oneshhh/book) directed us to a github repo, there's a **.docx** file and if we download it, it gives us a book. Almost the whole content is not important, but if we do a search with **Ctrl+F** and search for the string **_ACECTF_**, we would get into the book part with that string, take a look at the image below:\
+![Screenshot 2025-03-01 114219](https://github.com/user-attachments/assets/d9119f14-02fe-4f45-b408-bd667a7df7cd)
 
 
-
-
+Yup that's it, that's the flag. Just need a little bit formatting and we end this suffering.
+FLAG = ACECTF{}
