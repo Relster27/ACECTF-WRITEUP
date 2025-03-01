@@ -90,9 +90,11 @@ with open("output.7z", "wb") as f:
 Running this script converts the Base64 string to binary data and saves it as a file named `output.7z`. The file extension suggests this is a 7-Zip archive.
 
 ### Step 6: Finding the Archive Password
-Now we have a 7z archive file, but it's password-protected. Looking back at the Twitter profile for potential password clues, we notice a number: 2000914. This could be the password for the archive.
 
 ![image](https://github.com/user-attachments/assets/9ba963f3-cda3-460b-b832-f7a3d5719fa3)
+
+Now we have a 7z archive file, but it's password-protected. Looking back at the Twitter profile for potential password clues, we notice in the post given a birthday and a image of a passwword checker
+the birthday is 14 september 2000 , so it can be the password. Since the password is only 7 characters, we truncated the birthday month to only '9' instead of '09'. And then we tried to use the combinations off the birthday then we got the password correct on : 2000914
 
 
 ### Step 7: Extracting the Archive
