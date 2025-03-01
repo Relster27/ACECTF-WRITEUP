@@ -6,9 +6,6 @@
 
 The challenge provides two files: `encrypt.py` and `output.txt`. The Python script (`encrypt.py`) implements a custom encoding scheme that takes a plaintext message and encodes it using a modified Base64-like approach, incorporating bits from a redacted value (presumably the flag). The encoded output is stored in `output.txt`.
 
-The description states:
-> I wanted to create a custom encoding for a crypto challenge but turns out, I didn't have enough time on my hands. So, what I did here is - Well instead of explaining it to you why don't I give you the script?
-
 This suggests we need to understand the encoding algorithm and reverse it to recover the hidden flag.
 
 ## Solution Process
